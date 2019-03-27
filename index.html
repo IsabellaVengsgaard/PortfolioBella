@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <title>Isabella M.B Vengsgaard</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Isabella M. B. Vengsgaard">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <main>
+        <div id="menuTogether">
+            <nav id="menu">
+                <ol>
+                    <li><a href="#" data-target="home" class="nav-link">Portfolio</a></li>
+                    <li><a href="#" data-target="list" class="nav-link">Om Mig</a></li>
+                    <li><a href="#" data-target="detail" class="nav-link">Kontakt</a></li>
+                </ol>
+            </nav>
+
+            <span class="menuButton" onclick="openNav()">&#9776;</span>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="#" data-target="home" class="nav-link">Portfolio</a>
+                    <a href="#" data-target="list" class="nav-link">Om Mig</a>
+                    <a href="#" data-target="detail" class="nav-link">Kontakt</a>
+                </div>
+            </div>
+        </div>
+        <!--dette er forsiden til mit portfolio-->
+        <div class="page active" id="home">
+            <section id="titleHeroImage">
+                <picture>
+                    <source srcset="images/hero_image_til_laptop.jpg" media="(min-width: 950px)">
+                    <source srcset="images/hero_image_til_tablet.jpg" media="(min-width: 730px)">
+                    <img id="bella" src="images/hero_image_til_mobil.jpg" alt="">
+                </picture>
+                <div class="isabella">
+                    <h1>Isabella Münster Bak Vengsgaard</h1>
+                    <p>Multimediedesigner</p>
+                </div>
+                <div class="angleDown"><i class="fas fa-sort-down"></i></div>
+            </section>
+            <section id="aboutBella">
+                <div class="aboutMe">
+                    <h2>HVEM ER JEG?</h2>
+                    <p>Mit navn er Isabella Münster Bak Vengsgaard og jeg bor i Aarhus, hvor jeg studerer multimediedesign hos Erhvervsakademiet på 3 semester på frontend developer-linjen. Jeg leder p.t. efter en praktikplads og jeg søger efter et praktiksted hvor der er rig mulighed for udvikling og et miljø hvor kollegaer er åbne og hjælper hinanden.</p>
+                    <button>Læs mere</button>
+                </div>
+                <div class="picture"><img src="images/mig_bella.jpg" alt=""></div>
+            </section>
+
+            <h2 class="titlePort">Portfolio</h2>
+            <section id="portfolio">
+                <div class="portfolioFlex">
+                    <picture>
+                        <source srcset="images/laptop_space.png" media="(min-width: 730px)">
+                        <img src="images/icon_space.jpg" alt="Cassini on it's way to saturn">
+                    </picture>
+                    <div class="showTextHover" id="cassiniHuygens">
+                        <p>Cassini-Huygens I Rummet</p>
+                        <button data-target="space" class="nav-link">Se mere!</button>
+                    </div>
+                </div>
+                <div class="portfolioFlex">
+                    <picture>
+                        <source srcset="images/grums_laptop.jpg" media="(min-width: 730px)">
+                        <img src="images/icon_grums.jpg" alt="Infographic udarbejdet til virksomheden Grums">
+                    </picture>
+                    <div class="showTextHover" id="grumsInfo">
+                        <p>Infographic til Grums-Projekt</p>
+                        <button data-target="grums" class="nav-link">Se mere!</button>
+                    </div>
+                </div>
+                <div class="portfolioFlex">
+                    <picture>
+                        <source srcset="images/limitless_laptop.jpg" class="laptopSize" media="(min-width: 730px)">
+                        <img src="images/icon_limitless.jpg" alt="Infographic udarbejdet til Limitless">
+                    </picture>
+                    <div class="showTextHover" id="limitlessInfo">
+                        <p>Infographic til Limitless-Projekt</p>
+                        <button data-target="limitless" class="nav-link">Se mere!</button>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <p>Isabella Münster Bak Vengsgaard - 2019</p>
+            </footer>
+        </div>
+        <div class="page" id="space">
+            <div class="makeItBlack">hello</div>
+            <img id="spaceImage" src="images/saturn_cassini_space.jpg" alt="">
+            <div class="flexThis">
+                <div class="spaceText">
+                    <h2>Cassini In Space</h2>
+                    <p>Denne illustration lavede jeg, da jeg følte mig inspireret efter at have set en dokumentar omkring NASAs Cassini-rummission som studerede Saturn og dens måner i 20 år. Jeg bliver tit inspireret af rummet og elsker at lære mere om det. Et andet element der inspirerede mig, var disse meget simple illustrationer, kombineret med hvordan man kan tage noget som er utrolig komplekst og ”koge” det ned til en mere enkel version. Så den store udfordring i dette værk var at forsimple denne ekstremt indviklede og forvirrende rumsonde med hundredvis af komponenter, til at være et slags ikon for selve maskinen.  </p>
+                </div>
+                <img class="makeSmall" src="images/saturn_cassini_spacepart1.jpg" alt="">
+                <img class="makeSmall dontShow" src="images/saturn_cassini_spacepart2.jpg" alt="">
+                <img class="makeSmall noShow" src="images/saturn_cassini_spacepart2.jpg" alt="">
+            </div>
+
+            <footer>
+                <p>Isabella Münster Bak Vengsgaard - 2019</p>
+            </footer>
+        </div>
+
+        <div class="page" id="grums">
+            <div class="makeItPink">hello</div>
+            <img id="grumsImage" src="images/Infograph_grums.jpg" alt="">
+            <div class="grumsText">
+                <h2>Infographic til Grums</h2>
+                <p>Dette er en infographic jeg producerede i vores 2 semester forløb, hvor vi havde virksomheden Grums som vores kunde. Projektet gik ud på at promovere nogle nye produkter ved at skabe noget content til deres sociale medier og til dette var en infographic et af fokuspunkterne. Jeg arbejde med flat-design i dens udtryk og jeg valgte at inkludere farver som Grums bruger og få ekstra farvere som skulle gribe brugernes blikfang når de scroller rundt på de sociale medier, men naturligvis uden at gå for langt væk fra Grums’ identitet. Jeg udarbejdede hvordan de forskellige elementer skulle se ud, ved at kigge på de nye produkter som skulle promoveres og søgerede for at gøre deres mission og værdier synlige i teksten og udtrykket. </p>
+            </div>
+            <img id="grumsProdukter" src="images/Infograph_grums_icon.jpg" alt="">
+            <footer>
+                <p>Isabella Münster Bak Vengsgaard - 2019</p>
+            </footer>
+        </div>
+
+        <div class="page" id="limitless">
+            <div class="makeItblue">hello</div>
+            <img id="limitlessImage" src="images/infographic_limitless.jpg" alt="">
+            <div class="limitlessText">
+                <h2>Infographic til Limitless</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis dui eget orci bibendum volutpat nec vel arcu. Curabitur auctor semper fermentum. Nam consequat, arcu ac suscipit ornare, tellus velit maximus enim, id pretium sem nisl ut ex. Quisque a accumsan augue, sit amet vehicula tellus. Nunc faucibus eget nulla sed scelerisque. Etiam eu ante non odio facilisis volutpat. </p>
+            </div>
+            <img id="limitlessLille" src="images/infographic_limitless_icon.jpg" alt="">
+            <footer>
+                <p>Isabella Münster Bak Vengsgaard - 2019</p>
+            </footer>
+        </div>
+
+
+        <!--dette er Om mig-siden til mit portfolio-->
+        <div class="page" id="list">
+            <div class="makeItPink">hello</div>
+            <div class="omMigRyk">
+                <h3>Isabella</h3>
+                <p>Grunden til jeg valgte frontend developer linje, med kodning som fokus, var til dels fordi jeg synes kodning er meget interessant og til dels fordi jeg ønskede at blive udfordret, da jeg også synes det var rigtigt svært. Selvom jeg synes meget om kodning ønsker jeg at arbejde med design og UX, da det er her jeg føler min største interesse ligger. Jeg ser mig selv som en ansvarsbevidst og positiv person og jeg tilgår opgaver og projekter med stor nysgerrighed. Jeg er også en person som lægger meget passion i det jeg laver og ønsker altid at producere et resultat som jeg er tilfreds med. Ud over at være en meget passioneret person er jeg også en nørd og elsker at nørde med de emner der interessere mig. Før Multimediedesign uddannelsen gik jeg på Den Jyske Filmskole, hvor jeg ligesom Erhvervsakademiet fik mulighed for at nørde med en af mine interesser, som er videoredigering. Udover skole har jeg arbejdet en del igennem årene og jeg har tilsammen 6 års erfaring i detailhandel, hvilket har givet mig en rigtig god arbejdsmoral og selvrespekt og har gjort mig mere hårdtarbejdende og imødekommende.
+                    Jeg leder efter et praktiksted hvor der er rig mulighed for udvikling og et miljø hvor kollegaer hjælper hinanden med de dilemmaer der må komme op igennem tiden.
+                </p>
+                <h2>CURRICULUM VITAE</h2>
+                <img src="images/cv_isabella.jpg" alt="Mit CV">
+            </div>
+            <footer>
+                <p>Isabella Münster Bak Vengsgaard - 2019</p>
+            </footer>
+        </div>
+
+        <!--dette er kontakt mig-siden til mit portfolio-->
+        <div class="page" id="detail">
+            <div class="makeItblue">hello</div>
+            <div class="kontaktSamle">
+                <h3>SAY HALLO!</h3>
+                <section id="kontaktForm">
+                    <div class="container">
+                        <form action="mailto:eaaimbv@students.eaaa.dk" method="post" enctype="text/plain">
+                            <label for="fname">Navn</label>
+                            <input type="text" id="fname" name="navn" placeholder="Navn..">
+
+                            <label for="lname">E-mail</label>
+                            <input type="text" id="lname" name="email" placeholder="E-mail..">
+
+                            <label for="subject">Besked</label>
+                            <textarea id="subject" name="subject" placeholder="" style="height:200px"></textarea>
+
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <footer>
+                <p>Isabella Münster Bak Vengsgaard - 2019</p>
+            </footer>
+        </div>
+
+    </main>
+    <script src="js/main.js"></script>
+</body></html>

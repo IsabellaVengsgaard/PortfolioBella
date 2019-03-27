@@ -1,0 +1,798 @@
+/**** GLOBALES ****/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.titlePort {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p,
+a,
+button {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+html {
+    font-size: 20px;
+    /* 1rem will equal this now */
+    line-height: 1.6;
+}
+
+/**** Baggrunds farve til baggrunds billede ****/
+
+/**** PAGES ****/
+.page {
+    display: none;
+    width: 100%;
+    min-height: 100%;
+    /* allow for content off the bottom of the page */
+    position: absolute;
+}
+
+.active {
+    display: block;
+}
+
+#home {
+    background-color: rgb(255, 255, 255);
+}
+
+#list {
+    background-color: rgb(255, 255, 255);
+}
+
+#detail {
+    background-color: rgb(255, 255, 255);
+}
+
+#space {
+    background-color: rgb(255, 255, 255);
+}
+
+ol {
+    list-style-type: none;
+}
+
+/*-------------denne er for at menuen ikke vises på mobilstørrelse----------------*/
+#menu {
+    display: none;
+}
+
+#menuTogether {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+
+}
+
+/**Mobilmenu**/
+.menuButton {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    background-color: rgba(233, 179, 179, 0.7);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay {
+        overflow-y: auto;
+    }
+
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
+/**---------------Hero image--------------**/
+
+#titleHeroImage img {
+    width: 100%;
+}
+
+
+.isabella {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.isabella p {
+    font-size: 18px;
+}
+
+.isabella h1 {
+    color: white;
+    font-size: 25px;
+}
+
+/*-------------------hero image animation styles----------------------*/
+.angleDown i {
+    position: absolute;
+    font-size: 30px;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    animation: jump 4s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+@keyframes jump {
+
+    50%,
+    100% {
+        top: 20%
+    }
+
+    0% {
+        top: 20%;
+    }
+
+    30% {
+        top: 23%;
+    }
+}
+
+/*-------------------om mig forside styles----------------------*/
+#aboutBella {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.picture img {
+    width: 300px;
+    margin: 40px;
+    border-radius: 50%;
+}
+
+.aboutMe {
+    width: 100%;
+    margin-top: 40px;
+
+}
+
+.aboutMe h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.aboutMe p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/**---------------Portfolio billeder og links ind til content--------------**/
+
+.portfolioFlex {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+
+#portfolio img {
+    width: 80%;
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.showTextHover {
+    position: relative;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.portfolioFlex button {
+    padding: 6px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(233, 179, 179);
+    color: white;
+}
+
+
+
+/**-------------------Sider til content -----------------**/
+
+/**---------------limitless siden--------------**/
+.makeItblue {
+    width: 100%;
+    background-color: rgb(233, 179, 179);
+    color: rgb(233, 179, 179);
+    height: 70px;
+    position: absolute;
+}
+
+#limitlessImage {
+    width: 100%;
+    margin-top: 100px;
+    background-color: #1b1464;
+    padding: 20px;
+}
+
+#limitlessLille {
+    width: 50%;
+}
+
+/**---------------grums siden--------------**/
+.makeItPink {
+    width: 100%;
+    background-color: rgb(233, 179, 179);
+    color: rgb(233, 179, 179);
+    height: 70px;
+    position: absolute;
+}
+
+#grumsImage {
+    width: 100%;
+    margin-top: 80px;
+}
+
+.grumsText {
+    width: 80%;
+    margin: auto;
+}
+
+#grumsProdukter {
+    display: block;
+    width: 60%;
+    margin: auto;
+}
+
+#grums p {
+    font-size: 15px;
+}
+
+
+/**---------------space siden--------------**/
+
+.makeSmall {
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.makeItBlack {
+    width: 100%;
+    background-color: rgb(233, 179, 179);
+    color: rgb(233, 179, 179);
+    height: 70px;
+    position: absolute;
+}
+
+
+#spaceImage {
+    width: 100%;
+    margin-top: 80px;
+}
+
+#laptopSpace {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#space p {
+    font-size: 15px;
+}
+
+.spaceText {
+    width: 80%;
+    margin: auto;
+}
+
+.marginText {
+    margin-top: 10px;
+}
+
+
+footer {
+    margin-top: 10px;
+    background-color: rgb(84, 84, 84);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+
+footer p {
+    font-size: 8px !important;
+}
+
+.dontShow {
+    display: none;
+}
+
+/*---------------------om mig siden styles------------------------------*/
+
+.omMigRyk {
+    margin-top: 80px;
+}
+
+.omMigRyk h3,
+h2 {
+    text-align: center;
+}
+
+.omMigRyk img {
+    width: 100%;
+}
+
+.omMigRyk p {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+
+/*---------------------contact page styles------------------------------*/
+
+.kontaktSamle {
+    margin-top: 90px;
+}
+
+.kontaktSamle h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.kontakth3 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#kontaktForm {
+    width: 80%;
+    height: 600px;
+    background-color: rgb(84, 84, 84);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 250px;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+
+}
+
+input[type=submit] {
+    border-style: solid;
+    border-color: rgb(233, 179, 179);
+    border-radius: 20px;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    background-color: rgb(84, 84, 84);
+    transition: background-color 0.5s ease-out;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    text-decoration: none;
+    background-color: rgb(233, 179, 179);
+    color: black;
+}
+
+/*---------------tablet  styles--------------------*/
+
+@media (min-width:600px) {
+
+    .isabella {
+        position: absolute;
+        top: 16%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+    }
+
+    #portfolio img {
+        display: block;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 15px;
+    }
+
+    .aboutMe {
+        width: 60%;
+    }
+
+    .makeSmall {
+        width: 50%;
+        display: block;
+        margin: auto;
+    }
+
+    .dontShow {
+        display: none;
+    }
+
+    /**---------------limitless siden--------------**/
+
+    #limitlessImage {
+        display: block;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .limitlessText {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #limitlessLille {
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
+
+    /**---------------grums siden--------------**/
+
+    #grumsImage {
+        width: 70%;
+        display: block;
+        margin: auto;
+        margin-top: 80px;
+    }
+
+    .angleDown i {
+        position: absolute;
+        font-size: 30px;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        animation: jump 4s ease-in-out infinite;
+        animation-delay: 2s;
+    }
+
+    @keyframes jump {
+
+        50%,
+        100% {
+            top: 25%
+        }
+
+        0% {
+            top: 25%;
+        }
+
+        30% {
+            top: 27%;
+        }
+    }
+
+
+    /**h1 styles**/
+
+    h1 {
+        font-size: 35px !important;
+    }
+
+    .isabella p {
+        font-size: 25px;
+    }
+
+    /**---------------om mig siden--------------**/
+    #list img {
+        width: 50%;
+        margin-top: 10px;
+    }
+}
+
+/*---------------Laptop styles--------------------*/
+
+@media (min-width:950px) {
+
+    /*-------------denne er for at burgermenuen ikke vises på laptop størrelse----------------*/
+    .menuButton {
+        display: none;
+    }
+
+    #menu a {
+        margin: 10px;
+    }
+
+    #menu {
+        margin-right: 20px;
+        margin-top: 20px;
+
+    }
+
+    #menu a {
+        color: white;
+    }
+
+    /*---------------Hero image styles--------------------*/
+    .isabella {
+        position: absolute;
+        top: 9%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+    }
+
+    /*---------------Laptop menu styles--------------------*/
+
+
+    .menuBlock {
+        width: 100%;
+        height: 100px;
+        background-color: white;
+        border-style: solid;
+        border-color: white;
+        border-bottom-color: black;
+        border-width: thin;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    #menu a {
+        text-decoration-line: none;
+        color: white;
+        transition: color 0.5s ease-out;
+    }
+
+    #menu li {
+        display: inline;
+    }
+
+    #menu a:hover {
+        color: lightcoral;
+
+    }
+
+    #menuForside a {
+        color: white;
+    }
+
+    .aboutBella {
+        display: flex;
+    }
+
+    .aboutMe {
+        width: 50%;
+        order: 2;
+    }
+
+    .isabella h1 {
+        color: white;
+        font-size: 40px;
+    }
+
+    /*---------------Space siden styles--------------------*/
+    .makeSmall {
+        width: 30%;
+        display: block;
+        margin: auto;
+    }
+
+    .flexThis {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .flexThis img {
+        width: 40%;
+        margin: auto;
+    }
+
+    .dontShow {
+        display: block;
+    }
+
+    .noShow {
+        display: none !important;
+    }
+
+
+    /**---------------grums siden--------------**/
+
+    #grumsImage {
+        width: 50%;
+        display: block;
+        margin: auto;
+        margin-top: 80px;
+    }
+
+
+    /*---------------Laptop portfolie links styles--------------------*/
+    #portfolio {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    #portfolio img {
+        width: 70%;
+        margin-top: 20px;
+    }
+
+    .showTextHover {
+        background-color: white;
+        padding: 20px;
+        border-radius: 20px;
+        text-align: center;
+        transition: .5s ease;
+        opacity: 0;
+    }
+
+    .portfolioFlex:hover .showTextHover {
+        opacity: 1;
+    }
+
+    .showTextHover {
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        padding: 50px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+
+    #cassiniHuygens {
+        top: 54%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #grumsInfo {
+        top: 72%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #limitlessInfo {
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+    /*---------------aniamtion på forsiden--------------------*/
+    .angleDown i {
+        position: absolute;
+        font-size: 30px;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        animation: jump 4s ease-in-out infinite;
+        animation-delay: 2s;
+    }
+
+    @keyframes jump {
+
+        50%,
+        100% {
+            top: 15%
+        }
+
+        0% {
+            top: 15%;
+        }
+
+        30% {
+            top: 17%;
+        }
+    }
+
+
+
+
+}
