@@ -398,17 +398,19 @@ h2 {
     text-align: center;
 }
 
-.omMigRyk img {
+.cv {
     width: 100%;
 }
 
 .omMigRyk p {
     width: 80%;
     margin: auto;
-    margin-bottom: 50px;
     margin-top: 20px;
 }
 
+.omMigRyk h3 {
+    margin-top: 30px;
+}
 
 /*---------------------contact page styles------------------------------*/
 
@@ -584,10 +586,15 @@ input[type=submit]:hover {
     }
 
     /**---------------om mig siden--------------**/
-    #list img {
+    .cv {
+        display: block;
         width: 50%;
-        margin-top: 10px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
+    
+    
 }
 
 /*---------------Laptop styles--------------------*/
@@ -793,6 +800,11 @@ input[type=submit]:hover {
     }
 
 
-
-
+/*---------------om mig siden laptop--------------------*/
+    .indramTekst {
+        width: 70%;
+        margin: auto;
+        
+    }
+    
 }
