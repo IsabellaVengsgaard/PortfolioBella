@@ -54,6 +54,10 @@ const app = {
 
 document.addEventListener('DOMContentLoaded', app.init);
 
-
+window.addEventListener("load", function() {
+   const loader = document.querySelector(".loader");
+    console.log("The loader has Loaded");
+    loader.className += " hidden"; // class will be "loader hidden"
+});
 
 
