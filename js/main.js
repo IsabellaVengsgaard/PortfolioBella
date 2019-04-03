@@ -35,11 +35,6 @@ const app = {
     },
     pageShown: function(ev){
         console.log('Page', ev.target.id, 'just shown');
-        let h1 = ev.target.querySelector('h1');
-        h1.classList.add('big')
-        setTimeout((h)=>{
-            h.classList.remove('big');
-        }, 1200, h1);
     },
     poppin: function(ev){
         console.log(location.hash, 'popstate event');
