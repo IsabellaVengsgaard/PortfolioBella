@@ -312,7 +312,7 @@ ol {
 
 
 #portfolio img {
-    width: 80%;
+    width: 70%;
     display: block;
     margin: auto;
     border-radius: 15px;
@@ -349,20 +349,15 @@ ol {
 
 #limitlessImage {
     width: 100%;
-    margin-top: 100px;
+    margin-top: 20px;
     background-color: #1b1464;
     padding: 20px;
 }
 
-#limitlessLille {
-    width: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+.limitlessText {
+    width: 80%;
+    margin: auto;
 }
-
-footer {}
 
 /**---------------grums siden--------------**/
 .makeItPink {
@@ -375,7 +370,7 @@ footer {}
 
 #grumsImage {
     width: 100%;
-    margin-top: 80px;
+    margin-top: 20px;
 }
 
 .grumsText {
@@ -384,9 +379,8 @@ footer {}
 }
 
 #grumsProdukter {
-    display: block;
     width: 60%;
-    margin: auto;
+
 }
 
 #grums p {
@@ -434,27 +428,6 @@ footer {}
     margin: auto;
 }
 
-.marginText {
-    margin-top: 10px;
-}
-
-
-footer {
-    margin-top: 10px;
-    background-color: rgb(84, 84, 84);
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
-
-
-footer p {
-    font-size: 8px !important;
-}
-
-.dontShow {
-    display: none;
-}
 
 /*---------------------om mig siden styles------------------------------*/
 
@@ -549,6 +522,21 @@ input[type=submit]:hover {
 }
 
 
+/*---------------footer styles--------------------*/
+
+footer {
+    margin-top: 10px;
+    background-color: rgb(84, 84, 84);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 8px !important;
+}
+
+
 /*---------------tablet  styles--------------------*/
 
 @media (min-width:600px) {
@@ -569,19 +557,26 @@ input[type=submit]:hover {
         margin-right: auto;
         border-radius: 15px;
     }
-    
-    
+
     .hvemErJeg p {
         width: 60%;
     }
-
-    /**---------------space siden--------------**/
-
+    
+    /**---------------fælles styles for portfolioe elementer--------------**/
+    
     .makeSmall {
-        width: 80%;
-        display: block;
-        margin: auto;
+        width: 50%;
+        
     }
+    .spaceText,  .limitlessText, .grumsText {
+        width: 70%;
+    }
+    
+    .flexThis p {
+        font-size: 25px !important;
+    }
+    
+    /**---------------space siden--------------**/
 
     #spaceImage {
         display: block;
@@ -589,11 +584,6 @@ input[type=submit]:hover {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 50px;
-    }
-
-    .spaceText {
-        margin-bottom: 30px;
-        width: 70%;
     }
 
 
@@ -606,29 +596,16 @@ input[type=submit]:hover {
         margin-right: auto;
     }
 
-    .limitlessText {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    #limitlessLille {
-        display: block;
-        margin: auto;
-        width: 50%;
-    }
-
     /**---------------grums siden--------------**/
 
     #grumsImage {
         width: 70%;
         display: block;
         margin: auto;
-        margin-top: 80px;
+        margin-top: 30px;
     }
 
+      /**---------------animation på forsiden--------------**/
     .angleDown i {
         position: absolute;
         font-size: 30px;
@@ -714,8 +691,6 @@ input[type=submit]:hover {
     }
 
     /*---------------Laptop menu styles--------------------*/
-
-
     .menuBlock {
         width: 100%;
         height: 100px;
@@ -748,37 +723,58 @@ input[type=submit]:hover {
     #menuForside a {
         color: white;
     }
-
-
+    
     .aboutMe {
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
+
     .hvemErJeg {
         width: 50%;
         order: 2;
     }
-    
+
     .aboutMe img {
         width: 340px !important;
-    } 
+    }
 
     .isabella h1 {
         color: white;
         font-size: 40px;
     }
-    
+
     #aboutBella a {
         margin-bottom: 0px;
     }
 
+    /*---------------fælles styles i portfolio--------------------*/
+     .spaceText,  .limitlessText, .grumsText {
+        width: 50%;
+    }
+    
+    .flexThis {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+    
+    .flexThis p {
+        font-size: 17px !important;
+    }
+    
+    .makeSmall {
+        width: 55%;
+        margin: 0;
+        
+    }
+    
+    
     /*---------------Laptop Space siden styles--------------------*/
-
-
     #spaceImage {
         display: block;
-        width: 70%;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
     }
