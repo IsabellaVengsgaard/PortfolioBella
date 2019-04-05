@@ -42,12 +42,12 @@ const app = {
         document.querySelector('.active').classList.remove('active');
         document.getElementById(hash).classList.add('active');
         console.log(hash)
-        //history.pushState({}, currentPage, `#${currentPage}`);
         document.getElementById(hash).dispatchEvent(app.show);
     }
 }
 
 document.addEventListener('DOMContentLoaded', app.init);
+
 
 window.addEventListener("load", function() {
    const loader = document.querySelector(".loader");
@@ -56,3 +56,7 @@ window.addEventListener("load", function() {
 });
 
 
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

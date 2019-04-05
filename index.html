@@ -22,8 +22,8 @@
             <nav id="menu">
                 <ol>
                     <li><a href="#" data-target="home" class="nav-link">Portfolio</a></li>
-                    <li><a href="#" data-target="list" class="nav-link">Om Mig</a></li>
-                    <li><a href="#" data-target="detail" class="nav-link">Kontakt</a></li>
+                    <li><a href="#" data-target="about" class="nav-link">Om Mig</a></li>
+                    <li><a href="#" data-target="contact" class="nav-link">Kontakt</a></li>
                 </ol>
             </nav>
 
@@ -32,8 +32,8 @@
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <div class="overlay-content">
                     <a href="#" data-target="home" class="nav-link" onclick="closeNav()">Portfolio</a>
-                    <a href="#" data-target="list" class="nav-link" onclick="closeNav()">Om Mig</a>
-                    <a href="#" data-target="detail" class="nav-link" onclick="closeNav()">Kontakt</a>
+                    <a href="#" data-target="about" class="nav-link" onclick="closeNav()">Om Mig</a>
+                    <a href="#" data-target="contact" class="nav-link" onclick="closeNav()">Kontakt</a>
                 </div>
             </div>
         </div>
@@ -56,7 +56,7 @@
                     <div class="hvemErJeg">
                         <h2>HVEM ER JEG?</h2>
                         <p>Mit navn er Isabella Münster Bak Vengsgaard og jeg bor i Aarhus, hvor jeg studerer multimediedesign hos Erhvervsakademiet på 3 semester på frontend developer-linjen. Jeg leder p.t. efter en praktikplads og jeg søger efter et praktiksted hvor der er rig mulighed for udvikling og et miljø hvor kollegaer er åbne og hjælper hinanden.</p>
-                        <a href="#omMig" data-target="list" class="nav-link">Se mit CV</a>
+                        <a href="#omMig" onclick="topFunction()" data-target="about" class="nav-link">Se mit CV</a>
                     </div>
                     <div>
                         <img src="images/mig_bella.jpg" alt="">
@@ -69,32 +69,32 @@
                 <div class="portfolioFlex">
                     <picture>
                         <source srcset="images/portfolio_laptop.png" media="(min-width: 730px)">
-                        <img src="images/portfolio_mobil.png" data-target="space" class="nav-link" alt="Cassini on it's way to saturn">
+                        <img src="images/portfolio_mobil.png" data-target="space" class="nav-link" onclick="topFunction()" alt="Cassini on it's way to saturn">
                     </picture>
                     <div class="showTextHover" id="cassiniHuygens">
                         <p>Cassini-Huygens I Rummet</p>
 
-                        <button data-target="space" class="nav-link">Se mere!</button>
+                        <button onclick="topFunction()" data-target="space" class="nav-link">Se mere!</button>
                     </div>
                 </div>
                 <div class="portfolioFlex">
                     <picture>
                         <source srcset="images/portfolio_laptop2.png" media="(min-width: 730px)">
-                        <img src="images/portfolio_mobil3.png" data-target="grums" class="nav-link" alt="Infographic udarbejdet til virksomheden Grums">
+                        <img src="images/portfolio_mobil3.png" data-target="grums" class="nav-link" onclick="topFunction()" alt="Infographic udarbejdet til virksomheden Grums">
                     </picture>
                     <div class="showTextHover" id="grumsInfo">
                         <p>Infographic til Grums-Projekt</p>
-                        <button data-target="grums" class="nav-link">Se mere!</button>
+                        <button data-target="grums" class="nav-link" onclick="topFunction()">Se mere!</button>
                     </div>
                 </div>
                 <div class="portfolioFlex">
                     <picture>
                         <source srcset="images/portfolio_laptop1.png" class="laptopSize" media="(min-width: 730px)">
-                        <img src="images/portfolio_mobil2.png" data-target="limitless" class="nav-link" alt="Infographic udarbejdet til Limitless">
+                        <img src="images/portfolio_mobil2.png" data-target="limitless" class="nav-link" onclick="topFunction()" alt="Infographic udarbejdet til Limitless">
                     </picture>
                     <div class="showTextHover" id="limitlessInfo">
                         <p>Infographic til Limitless-Projekt</p>
-                        <button data-target="limitless" class="nav-link">Se mere!</button>
+                        <button data-target="limitless" class="nav-link" onclick="topFunction()">Se mere!</button>
                     </div>
                 </div>
             </section>
@@ -149,7 +149,7 @@
 
 
         <!--dette er Om mig-siden til mit portfolio-->
-        <div class="page" id="list">
+        <div class="page" id="about">
             <div class="makeItPink">hello</div>
             <div class="omMigRyk">
                 <div class="indramTekst">
@@ -167,7 +167,7 @@
         </div>
 
         <!--dette er kontakt mig-siden til mit portfolio-->
-        <div class="page" id="detail">
+        <div class="page" id="contact">
             <div class="makeItblue">hello</div>
             <div class="kontaktSamle">
                 <h3>SAY HALLO!</h3>

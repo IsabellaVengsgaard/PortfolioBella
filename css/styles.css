@@ -73,6 +73,7 @@ html {
     position: absolute;
 }
 
+
 .active {
     display: block;
 }
@@ -81,11 +82,11 @@ html {
     background-color: rgb(255, 255, 255);
 }
 
-#list {
+#about {
     background-color: rgb(255, 255, 255);
 }
 
-#detail {
+#contact {
     background-color: rgb(255, 255, 255);
 }
 
@@ -480,20 +481,22 @@ h2 {
 }
 
 #kontaktForm {
-    width: 80%;
+    width: 95%;
     height: 600px;
-    background-color: rgb(84, 84, 84);
+    background-color: lightgray;
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding-top: 20px;
     border-radius: 10px;
-    color: white;
+    color: black;
     margin-bottom: 30px;
     padding-left: 10px;
     padding-right: 10px;
     margin-bottom: 250px;
+    font-family: 'Open Sans Condensed', sans-serif !important;
 }
+
 
 input[type=text],
 select,
@@ -506,7 +509,7 @@ textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-
+    font-family: font-family: 'Open Sans Condensed', sans-serif;
 }
 
 input[type=submit] {
@@ -517,8 +520,8 @@ input[type=submit] {
     padding: 10px;
     text-align: center;
     display: inline-block;
-    color: white;
-    background-color: rgb(84, 84, 84);
+    color: black;
+    background-color: lightgray;
     transition: background-color 0.5s ease-out;
     cursor: pointer;
 }
@@ -526,7 +529,7 @@ input[type=submit] {
 input[type=submit]:hover {
     text-decoration: none;
     background-color: rgb(233, 179, 179);
-    color: black;
+    color: white;
 }
 
 
@@ -567,6 +570,10 @@ footer p {
     }
 
     .hvemErJeg p {
+        width: 60%;
+    }
+    
+    #kontaktForm {
         width: 60%;
     }
     
@@ -686,6 +693,10 @@ footer p {
 
     #menu a {
         color: white;
+    }
+    
+    #kontaktForm {
+        width: 40%;
     }
 
     /*---------------Hero image styles--------------------*/
@@ -853,4 +864,9 @@ footer p {
 
     }
 
+}
+
+.makeItPink {
+    position: absolute;
+    top: 0;
 }
